@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="engineid" class="org.example.Engine"> </bean>
+    <bean id="carid" class="org.example.Car">
+        <property name="milage" value="15"> </property>
+        <property name="engine" ref="engineid"> </property>
+    </bean>
+
+</beans>
